@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajay & Hansika Wedding</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;700&family=Lora&display=swap" rel="stylesheet">
+
+<style>
+body { font-family:'Lora', serif; background:#fcfbf7; color:#1c1917; margin:0; }
+.font-title { font-family:'Cinzel', serif; }
+.font-script { font-family:'Great Vibes', cursive; }
+.hidden-lang { display:none!important; }
+.btn-pro {
+  background:#800000; color:#fff; border-radius:50px;
+  padding:10px 26px; font-size:11px; font-weight:bold;
+}
+.countdown span { color:#800000; font-weight:bold; }
+.event-img {
+  width:100%; height:220px; object-fit:cover;
+  border-radius:16px; margin-bottom:16px;
+}
+/* Event image base style */
+.event-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.6s ease;
+}
+
+/* Hover zoom */
+.event-img:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile safety: show full image */
+@media (max-width: 640px) {
+  .event-img {
+    object-fit: contain;
+    background-color: #000;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Language Toggle -->
+<div class="fixed top-5 right-5 z-50">
+  <button id="lang-btn" class="bg-white border px-5 py-2 rounded-full font-bold text-red-900 shadow">
+    తెలుగు
+  </button>
+</div>
+
+<!-- Hero -->
+<header class="relative h-screen flex items-center justify-center text-center text-white">
+  <img
+  src="images/Hero.jpg"
+  class="absolute inset-0 w-full h-full object-cover object-top -z-20"
+  alt="Wedding"/>
+
+  <div class="absolute inset-0 bg-black/40 -z-10"></div>
+
+  <div>
+    <p class="font-title lang-en tracking-widest text-sm">
+      SRI RAJAMURI ANJANEYA SWAMY PRASANNA
+    </p>
+    <p class="font-title lang-te hidden-lang tracking-widest text-sm">
+      శ్రీ రాజమూరి ఆంజనేయస్వామి ప్రసన్న
+    </p>
+
+    <h1 class="font-script text-7xl text-amber-100 my-4">
+      Ajay & Hansika
+    </h1>
+
+    <p class="font-title lang-en">WEDNESDAY • MAY 13 • 2026</p>
+    <p class="font-title lang-te hidden-lang">బుధవారం • మే 13 • 2026</p>
+  </div>
+</header>
+
+<!-- Invitation -->
+<section class="max-w-3xl mx-auto px-6 py-16 text-center">
+  <div class="bg-white p-10 rounded-2xl shadow">
+    <p class="lang-en">
+      With the blessings of the Almighty and our elders, we cordially invite you and your family
+      to grace the wedding celebrations of <b>Ajay Kumar Reddy & Hansika</b>.
+    </p>
+    <p class="lang-te hidden-lang">
+      దైవానుగ్రహంతో మరియు పెద్దల ఆశీర్వాదాలతో
+      అజయ్ కుమార్ రెడ్డి & హన్సిక వివాహ శుభకార్యానికి
+      మీ కుటుంబ సభ్యులతో సహా హాజరై మమ్మల్ని ఆశీర్వదించగలరని కోరుకుంటున్నాము.
+    </p>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="max-w-3xl mx-auto px-6 py-16 space-y-12">
+
+<!-- 🌼 MEHANDI -->
+<div class="event-section bg-white p-10 rounded-2xl shadow text-center" data-event-time="2026-05-10T16:30:00">
+  
+<img src="images/mehandi.jpg"
+     class="event-img object-center"
+     alt="MEHANDI"/>
+
+  <h3 class="font-title text-yellow-800">🌼 MEHANDI</h3>
+  <p class="font-bold">Sunday, 10th May 2026 • 4:30 PM</p>
+  <p>Kishtapur Village, Hyderabad</p>
+  <p class="lang-en mt-2">A joyful beginning filled with colours and happiness.</p>
+  <p class="lang-te hidden-lang mt-2">పెళ్లి వేడుకల ఆనందకరమైన ఆరంభం.</p>
+  <div class="countdown mt-3"></div>
+  <a href="https://maps.app.goo.gl/JWLfAXiFmyVadWDX6" target="_blank">
+    <button class="btn-pro mt-3">MAP DIRECTIONS</button>
+  </a>
+</div>
+
+<!-- 🌼 HALDI -->
+<div class="event-section bg-white p-10 rounded-2xl shadow text-center" data-event-time="2026-05-11T10:30:00">
+  <img
+  src="images/haldi.jpg"
+  alt="Haldi Ceremony"
+  class="w-full h-[320px] object-cover object-top rounded-2xl mb-6"
+/>
+
+
+  <h3 class="font-title text-yellow-800">🌼 HALDI</h3>
+  <p class="font-bold">Monday, 11th May 2026 • 10:30 AM</p>
+  <p>Kishtapur Village, Hyderabad</p>
+  <p class="lang-en mt-2">A sacred ritual blessing the couple.</p>
+  <p class="lang-te hidden-lang mt-2">శుభం మరియు ఆరోగ్యం ప్రసాదించే కార్యక్రమం.</p>
+  <div class="countdown mt-3"></div>
+  <a href="https://maps.app.goo.gl/JWLfAXiFmyVadWDX6" target="_blank">
+    <button class="btn-pro mt-3">MAP DIRECTIONS</button>
+  </a>
+</div>
+
+<!-- 🎶 SANGEET -->
+<div class="event-section bg-white p-10 rounded-2xl shadow text-center" data-event-time="2026-05-11T16:30:00">
+   <img
+  src="images/sangeet.jpg"
+  alt="sangeet Ceremony"
+  class="w-full h-[320px] object-cover object-top rounded-2xl mb-6"
+/>
+
+  <h3 class="font-title text-yellow-800">🎶 SANGEET</h3>
+  <p class="font-bold">Monday, 11th May 2026 • 4:30 PM</p>
+  <p>Kishtapur Village, Hyderabad</p>
+  <p class="lang-en mt-2">Music, dance, and family togetherness.</p>
+  <p class="lang-te hidden-lang mt-2">పాటలు, నృత్యాలతో నిండిన వేడుక.</p>
+  <div class="countdown mt-3"></div>
+  <a href="https://maps.app.goo.gl/JWLfAXiFmyVadWDX6" target="_blank">
+    <button class="btn-pro mt-3">MAP DIRECTIONS</button>
+  </a>
+</div>
+
+<!-- 🔱 PELIKODUKU – NIGHT -->
+<div class="event-section bg-white p-10 rounded-2xl shadow text-center" data-event-time="2026-05-11T20:30:00">
+   <img
+  src="images/pelikoduku-night.jpg"
+  alt="muhurtham Ceremony"
+  class="w-full h-[320px] object-cover object-top rounded-2xl mb-6"
+/>
+
+  <h3 class="font-title text-yellow-800">🔱 PELIKODUKU</h3>
+  <p class="font-bold">Monday, 11th May 2026 • 8:30 PM</p>
+  <p>Kishtapur Village, Hyderabad</p>
+  <p class="lang-en mt-2">Traditional ceremony honouring the groom.</p>
+  <p class="lang-te hidden-lang mt-2">వరుడిని గౌరవించే సంప్రదాయ వేడుక.</p>
+  <div class="countdown mt-3"></div>
+  <a href="https://maps.app.goo.gl/JWLfAXiFmyVadWDX6" target="_blank">
+    <button class="btn-pro mt-3">MAP DIRECTIONS</button>
+  </a>
+</div>
+
+<!-- 🔱 PELIKODUKU – ALL DAY -->
+<div class="event-section bg-white p-10 rounded-2xl shadow text-center" data-event-time="2026-05-12T09:00:00">
+   <img
+  src="images/pelikoduku-day.jpg"
+  alt="muhurtham Ceremony"
+  class="w-full h-[320px] object-cover object-top rounded-2xl mb-6"
+/>
+
+  <h3 class="font-title text-yellow-800">🔱 PELIKODUKU (ALL DAY)</h3>
+  <p class="font-bold">Tuesday, 12th May 2026 • All Day</p>
+  <p>Kishtapur Village, Hyderabad</p>
+  <p class="lang-en mt-2">Full-day traditional rituals and blessings.</p>
+  <p class="lang-te hidden-lang mt-2">రోజంతా జరిగే సంప్రదాయ కార్యక్రమాలు.</p>
+  <div class="countdown mt-3"></div>
+  <a href="https://maps.app.goo.gl/JWLfAXiFmyVadWDX6" target="_blank">
+    <button class="btn-pro mt-3">MAP DIRECTIONS</button>
+  </a>
+</div>
+
+<!-- 💍 MUHURTHAM -->
+<div class="event-section bg-white p-10 rounded-2xl shadow text-center" data-event-time="2026-05-13T10:14:00">
+  <img
+  src="images/muhurtham.jpg"
+  alt="muhurtham Ceremony"
+  class="w-full h-[320px] object-cover object-top rounded-2xl mb-6"
+/>
+
+  <h3 class="font-title text-yellow-800">💍 THE MUHURTHAM</h3>
+  <p class="font-bold">Wednesday, 13th May 2026 • 10:14 AM</p>
+  <p>Royal Function Hall, Narsingi</p>
+  <p class="lang-en mt-2">The sacred union of two souls.</p>
+  <p class="lang-te hidden-lang mt-2">రెండు ఆత్మలు ఏకమయ్యే పవిత్ర క్షణం.</p>
+  <div class="countdown mt-3"></div>
+  <a href="https://maps.google.com/?q=Royal+Function+Hall+Narsingi" target="_blank">
+    <button class="btn-pro mt-3">MAP DIRECTIONS</button>
+  </a>
+</div>
+
+<!-- 🍽️ RECEPTION -->
+<div class="event-section bg-white p-10 rounded-2xl shadow text-center" data-event-time="2026-05-14T10:00:00">
+   <img
+  src="images/reception.jpg"
+  alt="sangeet Ceremony"
+  class="w-full h-[320px] object-cover object-top rounded-2xl mb-6"
+/>
+
+  <h3 class="font-title text-yellow-800">🍽️ RECEPTION</h3>
+  <p class="font-bold">Thursday, 14th May 2026 • 10:00 AM</p>
+  <p>Kishtapur Village, Hyderabad</p>
+  <p class="lang-en mt-2">Celebrating the newlyweds with family.</p>
+  <p class="lang-te hidden-lang mt-2">నూతన దంపతులను అభినందించే వేడుక.</p>
+  <div class="countdown mt-3"></div>
+  <a href="https://maps.app.goo.gl/JWLfAXiFmyVadWDX6" target="_blank">
+    <button class="btn-pro mt-3">MAP DIRECTIONS</button>
+  </a>
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer class="bg-stone-900 text-white text-center py-10">
+  <p class="font-title tracking-widest text-xs mb-3">
+    AJAY KUMAR REDDY &amp; HANSIKA • 2026
+  </p>
+  <p class="text-stone-400 text-sm">
+    Parents: Smt. Ammanolla Vanaja &amp; Sri Ammanolla Ramreddy
+  </p>
+  <p class="text-stone-400 text-sm mt-1">
+    Contact: 8328460676, 9010384836
+  </p>
+</footer>
+
+<!-- Scripts -->
+<script>
+/* Language Toggle */
+const btn = document.getElementById('lang-btn');
+let isEnglish = true;
+btn.onclick = () => {
+  document.querySelectorAll('.lang-en').forEach(e => e.classList.toggle('hidden-lang'));
+  document.querySelectorAll('.lang-te').forEach(e => e.classList.toggle('hidden-lang'));
+  btn.textContent = isEnglish ? 'ENGLISH' : 'తెలుగు';
+  isEnglish = !isEnglish;
+};
+
+/* Countdown + Auto Remove */
+document.querySelectorAll('.event-section').forEach(section => {
+  const eventTime = new Date(section.dataset.eventTime).getTime();
+  const cd = section.querySelector('.countdown');
+  const timer = setInterval(() => {
+    const diff = eventTime - Date.now();
+    if (diff <= 0) {
+      section.style.display = 'none';
+      clearInterval(timer);
+      return;
+    }
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    cd.innerHTML = `<span>${d}</span>d <span>${h}</span>h <span>${m}</span>m <span>${s}</span>s`;
+  }, 1000);
+});
+</script>
+
+</body>
+</html>
